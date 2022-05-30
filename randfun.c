@@ -13,16 +13,14 @@ void reply(char randChar);
    {
        char randChar = ' ';
        int randNum = 0;
-// Provide seed for the random number  // generator.
-     srand(time(NULL)); //only do this once
-// The ASCII code for ‘a’ is 97, so     // add 97 to the random number to get       // a lower case letter.
-// Type cast to character to convert      // it to a char type.
+     srand(time(NULL)); 
+      // The ASCII code for ‘a’ is 97, so     
+      // add 97 to the random number to get     
+      // a lower case letter.
+      // Type cast to character to convert it to a char type.
  randChar = (rand()%(90-65))+65; //65 is ASCII for capital A, 90 is ASCII for capital Z
-         // printf ("Random char: %c\n", randChar);
     char Ans[70];
     fgets(Ans, sizeof(Ans), stdin);  // read string
-    // printf("Notice please type full stop insted of space .\n\n");
-//if(randChar != 0){
 if(randChar == 'A'){
     printf("Whats your favorite way to spend a day off?\n");
     printf("Ans : ");
